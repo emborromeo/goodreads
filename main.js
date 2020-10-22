@@ -23,3 +23,4 @@ fetch(`http://hp-api.herokuapp.com/api/characters`)
  });
 };
 
+//let hpObj = data.find(hp =>typedName.toLowerCase()===hp.name.toLowerCase() );
