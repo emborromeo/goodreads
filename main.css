@@ -2,10 +2,6 @@
     font-family: hpFont;
     src: url("fonts/dum2.ttf");
   }
-  @font-face {
-    font-family: hpFont1;
-    src: url("fonts/parry-hotter.regular.ttf");
-  }
 body{
     background-repeat: no-repeat;    
     background-size: auto;
@@ -63,13 +59,3 @@ body{
 .hp-info span{
  color: #f3eef7;
 }
-#char-list{
-    font-family:hpFont;
-    color: #f3eef7;
-    font-size: 1.6em;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-display: none;
-}  
