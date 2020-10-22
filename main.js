@@ -63,6 +63,4 @@ fetch(hpUrl)
 */
 });   
 }
-=======
-//let hpObj = data.find(hp =>typedName.toLowerCase()===hp.name.toLowerCase() );
->>>>>>> d2c6d73600dd42e5034fa2b1941f9d4d48c27d1b
+
