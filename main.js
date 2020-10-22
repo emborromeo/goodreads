@@ -16,7 +16,7 @@ fetch(hpUrl)
     document.querySelector("#hairColor").innerHTML=hpObj.hairColour;
     document.querySelector("#gender").innerHTML=hpObj.gender;
     document.querySelector("#house").innerHTML=hpObj.house;
-    document.querySelector("#ancestry").innerHTML=hpObj.ancestry;
+    document.querySelector("#ancestry").innserHTML=hpObj.ancestry;
     document.querySelector("#patronus").innerHTML=hpObj.patronus;
 });
 };
@@ -44,25 +44,4 @@ fetch(hpUrl)
     document.querySelector("#house").innerHTML=data[i].house;
     document.querySelector("#ancestry").innerHTML=data[i].ancestry;
     document.querySelector("#patronus").innerHTML=data[i].patronus;
-    //document.body.appendChild(viewChar);
-   
- }    
-
-    /*
-    const newDiv=document.createElement('div');
-    newDiv.className='view-characters';
-    const imgDiv=document.createElement('img');
-    imgDiv.className='image';
-    const newInfo=document.createElement('div');
-    newInfo.className('hp-info');
-    document.body.appendChild(newDiv);
-    newDiv.appendChild(imgDiv);
-    newDiv.appendChild(newInfo);
-
-<<<<<<< HEAD
-*/
-});   
-}
-=======
-//let hpObj = data.find(hp =>typedName.toLowerCase()===hp.name.toLowerCase() );
->>>>>>> d2c6d73600dd42e5034fa2b1941f9d4d48c27d1b
+    }
