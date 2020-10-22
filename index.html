@@ -1,13 +1,59 @@
-"emmet.triggerExpansionOnTab": true
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reads</title>
+    <title>HP Characters</title>
+    <link rel="stylesheet" href="main.css">
+   
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     
 </head>
 <body>
-    
+   <div>
+         <img src="images/title.png" class="hp-title">
+    </div>
+      
+    <div class="search-comp">      
+        <label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+            <span class="mdc-text-field__ripple"></span>
+            <input class="mdc-text-field__input"  size="30" id="search-reads" type="text" placeholder="Type HP character name..." aria-label="Label">
+            <span class="mdc-line-ripple"></span>
+          </label>
+          <button class="mdc-icon-button material-icons" id="seacrh-btn" onclick="searchBtn()">search</button>
+    </div>
+     
+    <div class="view-characters">   
+        <img id="image" src="images/png.png"> 
+        <div class="hp-info">         
+            <label> Name: </label>
+            <span id="name"></span> 
+            <br>   
+            <label>Date of birth: </label>
+            <span id="bDay"></span>
+            <br>   
+            <label> Eye Color: </label>
+            <span id="eyeColor"></span>
+            <br>   
+            <label> Hair  Color: </label>
+            <span id="hairColor"></span>
+            <br>   
+            <label>Gender: </label>
+            <span id="gender"></span>
+            <br>   
+            <label> House: </label>
+            <span id="house"></span>
+            <br>   
+            <label>Ancestry: </label>
+            <span id="ancestry"></span>
+            <br>   
+            <label> Patronus: </label>
+            <span id="patronus"></span>     
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
