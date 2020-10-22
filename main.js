@@ -44,4 +44,27 @@ fetch(hpUrl)
     document.querySelector("#house").innerHTML=data[i].house;
     document.querySelector("#ancestry").innerHTML=data[i].ancestry;
     document.querySelector("#patronus").innerHTML=data[i].patronus;
+<<<<<<< HEAD
     }
+=======
+    //document.body.appendChild(viewChar);
+   
+ }    
+
+    /*
+    const newDiv=document.createElement('div');
+    newDiv.className='view-characters';
+    const imgDiv=document.createElement('img');
+    imgDiv.className='image';
+    const newInfo=document.createElement('div');
+    newInfo.className('hp-info');
+    document.body.appendChild(newDiv);
+    newDiv.appendChild(imgDiv);
+    newDiv.appendChild(newInfo);
+
+<<<<<<< HEAD
+*/
+});   
+}
+
+>>>>>>> e571714aecdc9035a4def54cbd7e89fcf27740ef
