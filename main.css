@@ -2,6 +2,10 @@
     font-family: hpFont;
     src: url("fonts/dum2.ttf");
   }
+  @font-face {
+    font-family: hpFont1;
+    src: url("fonts/HARRYP__.TTF");
+  }
 body{
     background-repeat: no-repeat;    
     background-size: auto;
@@ -57,5 +61,14 @@ body{
     padding-left: 10PX; 
 }
 .hp-info span{
- color: #f3eef7;
+    color:#f3eef7;
+}
+#char-list{
+    display: none;
+    font-family: hpFont;
+    color:#f3eef7;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px;
 }

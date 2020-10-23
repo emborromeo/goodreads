@@ -1,4 +1,4 @@
-hpUrl=`http://hp-api.herokuapp.com/api/characters`;
+const hpUrl=`http://hp-api.herokuapp.com/api/characters`;
 const searchBtn=()=>{
     const typedName=document.getElementById("search-reads").value;
     
@@ -27,13 +27,13 @@ const viewAll=()=>{
     .then(data=>{  
         console.log(data.length);
         
-        for(i=0; i<=data.length;i++){ 
+        document.getElementById("char-list").style.display="block";
+        let newChar = document.getElementsByClassName("view-characters")[0];
            
-            var newChar = document.getElementsByClassName("view-characters")[0];
-            var viewChar = newChar.cloneNode(true);
-            const viewAll=document.createElement('div');
-            document.body.appendChild(viewAll);
-            viewAll.appendChild(viewChar);
+         for(let i=0; i<=data.length;i++){ 
+                
+            let viewChar = newChar.cloneNode(true);     
+            document.body.appendChild(viewChar);
             console.log(data[i].image);
             document.querySelector('#image').src=data[i].image;   
             document.querySelector("#name").innerHTML=data[i].name;
@@ -44,9 +44,7 @@ const viewAll=()=>{
             document.querySelector("#house").innerHTML=data[i].house;
             document.querySelector("#ancestry").innerHTML=data[i].ancestry;
             document.querySelector("#patronus").innerHTML=data[i].patronus;
-         
 
-    }
-            viewAll[0].style.display="none";
+   }
 });   
-}
+};
