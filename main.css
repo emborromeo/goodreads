@@ -2,15 +2,11 @@
     font-family: hpFont;
     src: url("fonts/dum2.ttf");
   }
-  @font-face {
-    font-family: hpFont1;
-    src: url("fonts/HARRYP__.TTF");
-  }
+
 body{
     background-repeat: no-repeat;    
     background-size: auto;
-    background-color: #a4508b; background-image: url("images/bg.jpg");
-    
+    background-color: #a4508b; background-image: url("images/bg.jpg")    
 }
 .hp-title{
     height:250px;
