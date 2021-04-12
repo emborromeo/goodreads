@@ -22,31 +22,3 @@ const searchBtn = () => {
         document.querySelector("#patronus").innerHTML = hpObj.patronus;
     });
 };
-const viewAll = () => {
-
-    fetch(hpUrl)
-    .then(response => response.json())
-    .then(data => {  
-        console.log(data.length);
-        
-        document.getElementById("char-list").style.display = "block";
-        let newChar = document.getElementsByClassName("view-characters")[0];
-           
-         for(let i = 0; i <= data.length ; i++){ 
-                
-            let viewChar = newChar.cloneNode(true);     
-            document.body.appendChild(viewChar);
-            console.log(data[i].image);
-            document.querySelector('#image').src = data[i].image;   
-            document.querySelector("#name").innerHTML = data[i].name;
-            document.querySelector("#bDay").innerHTML = data[i].dateOfBirth;
-            document.querySelector("#eyeColor").innerHTML = data[i].eyeColour;
-            document.querySelector("#hairColor").innerHTML = data[i].hairColour;
-            document.querySelector("#gender").innerHTML = data[i].gender;
-            document.querySelector("#house").innerHTML = data[i].house;
-            document.querySelector("#ancestry").innerHTML = data[i].ancestry;
-            document.querySelector("#patronus").innerHTML = data[i].patronus;
-
-         }
-    });   
-};
